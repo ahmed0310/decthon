@@ -40,14 +40,22 @@
   }
   .hero .hero-container p{
     text-align: center;
+    letter-spacing: 3px;
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
   }
   .wave1-content {
     flex-direction: column;
   }
+  .wave1 h3{
+    margin-top: 30px;
+  }
   .wave1 img {
     margin: auto;
-    width: 60vw;
-    height: 60vw;
+    width: 75vw;
+    height: 75vw;
+    padding-right: 0;
   }
   .headings {
     width: 100%;
@@ -68,7 +76,7 @@
   .wave1-text p {
     font-size: 1.5rem;
     line-height: 2.5rem;
-    text-align: justify;
+    text-align: center;
   }
   /* ---------WAVE 2------- */
   .wave2 p {
@@ -90,6 +98,19 @@
   }
   .wave3 .icon img {
     width: 40px;
+  }
+  .team-members{
+    gap: 60px;
+  }
+}
+@media (max-width: 500px){
+  .details{
+    width: 85%;
+    margin: auto;
+  }
+  .social-links{
+    width: 85%;
+    margin: auto;
   }
 }
 @media (max-width: 400px) {
@@ -135,5 +156,11 @@
   }
   .wave3 .icon img{
     width: 30px;
+  }
+  .details{
+    width: 100%;
+  }
+  .social-links{
+    width: 100%;
   }
 }
