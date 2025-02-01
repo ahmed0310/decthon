@@ -30,6 +30,7 @@ themeChanger.addEventListener("click", ()=> {
     let wave2 = document.getElementById("wave2");
     let wave3 = document.getElementById("wave3");
     let wave4 = document.getElementById("wave4");
+    let testimonials = document.getElementById("testimonials")
     let headings = Array.from(document.getElementsByClassName("headings"));
     let details = document.getElementById("details");
     let socialLinks = document.getElementById("social-links");
@@ -46,6 +47,14 @@ themeChanger.addEventListener("click", ()=> {
         wave4.style.backgroundColor = "";
         details.style.backgroundColor = "";
         socialLinks.style.backgroundColor = "";
+
+        testimonials.style.backgroundColor = "";
+        testimonials.querySelectorAll(".testimonial-card").forEach((card) => {
+            card.style.backgroundColor = "";
+            card.querySelector(".testimonial-text").style.color = "";
+            card.querySelector(".author-name").style.color = "";
+        })
+
 
         wave1.querySelectorAll("p").forEach((p) => {
             p.style.color = "";
@@ -82,11 +91,18 @@ themeChanger.addEventListener("click", ()=> {
     else{
         themeChanger.classList.add("dark-active")
         wave1.style.backgroundColor = "#1b1d1e";
-        wave2.style.backgroundColor = "#343a40";
-        wave3.style.backgroundColor = "#1b1d1e";
-        wave4.style.backgroundColor = "#343a40";
+        wave2.style.backgroundColor = "#0c0e0f";
+        wave3.style.backgroundColor = "#0c0e0f";
+        wave4.style.backgroundColor = "#1b1d1e";
         details.style.backgroundColor = "#272829";
         socialLinks.style.backgroundColor = "#272829";
+
+        testimonials.style.backgroundColor = "#1b1d1e";
+        testimonials.querySelectorAll(".testimonial-card").forEach((card) => {
+            card.style.backgroundColor = "#323233";
+            card.querySelector(".testimonial-text").style.color = "#fff";
+            card.querySelector(".author-name").style.color = "#fff";
+        })
 
         wave1.querySelectorAll("p").forEach((p) => {
             p.style.color = "white";
