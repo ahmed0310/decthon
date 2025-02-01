@@ -61,7 +61,7 @@ header {
   transition: all 0.5s;
   padding: 0 15px;
   background: #040b14;
-  z-index: 4;
+  z-index: 11;
   overflow-y: auto;
 }
 nav {
