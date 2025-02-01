@@ -65,11 +65,10 @@ h2 {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     width: 300px;
     text-align: left;
-    transition: 0.3s;
 }
 
-.card.highlighted {
-    border: 2px solid #149ddd;
+.card:hover{
+    border: 1px solid #149ddd;
 }
 
 h3 {
