@@ -19,6 +19,27 @@ body {
     flex-direction: column;
 }
 
+.planToggle{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: white;
+    padding: 10px 25px;
+    cursor: pointer;
+    border: 1px solid #149ddd;
+    color: #fff;
+    margin: 10px;
+    border-radius: 5px;
+    background-color: #149ddd;
+    transition: .3s;
+}
+
+.planToggle:hover{
+    transition: .3s;
+    background-color: #fff;
+    color: #149ddd;
+}
+
 .pricing-container {
     width: 80%;
     max-width: 1000px;
@@ -29,6 +50,7 @@ h2 {
     margin-bottom: 20px;
     font-weight: bold;
 }
+
 
 .pricing-cards {
     display: flex;
@@ -67,7 +89,7 @@ h3 {
     color: gray;
 }
 
-button {
+.getStarted {
     display: block;
     width: 100%;
     padding: 10px;
@@ -81,7 +103,7 @@ button {
     background-color: #149ddd;
 }
 
-button:hover {
+.getStarted:hover {
     opacity: 0.8;
 }
 

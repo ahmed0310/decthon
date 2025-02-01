@@ -3,18 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/img/logo.webp" type="image/x-icon">
+
     <title>Pricing Table</title>
     <link rel="stylesheet" href="./assets/css/pricely-plans.css">
 </head>
 <body>
 
     <div class="pricing-container">
+        <button id="planToggle" class="planToggle">Yearly</button>
         <h2>Choose your plan</h2>
-        <div class="pricing-cards">
+        <div id="pricing-cards-monthly" class="pricing-cards">
             <div class="card">
                 <h3>Team</h3>
-                <p class="price">$150 <span>/month</span></p>
-                <button>Get started</button>
+                <p id="team" class="price">$150 <span>/month</span></p>
+                <button class="getStarted">Get started</button>
                 <ul>
                     <li>✔ 1 user per account</li>
                     <li>✔ Unlimited events</li>
@@ -27,8 +30,8 @@
 
             <div class="card highlighted">
                 <h3>Agency</h3>
-                <p class="price">$400 <span>/month</span></p>
-                <button>Get started</button>
+                <p id="agency" class="price">$400 <span>/month</span></p>
+                <button class="getStarted">Get started</button>
                 <ul>
                     <li>✔ Unlimited paid tickets</li>
                     <li>✔ Google Analytics Integration</li>
@@ -41,8 +44,8 @@
 
             <div class="card">
                 <h3>Enterprise</h3>
-                <p class="price">$999 <span>/month</span></p>
-                <button>Get started</button>
+                <p id="enterprise" class="price">$999 <span>/month</span></p>
+                <button class="getStarted">Get started</button>
                 <ul>
                     <li>✔ Unlimited account users</li>
                     <li>✔ Custom domain support</li>
@@ -57,6 +60,27 @@
             </div>
         </div>
     </div>
-
+    <script>
+        const toggle = document.getElementById("planToggle");
+        const team = document.getElementById("team");
+        const agency = document.getElementById("agency");
+        const enterprise = document.getElementById("enterprise");
+        toggleBool = true;
+        toggle.addEventListener('click', () => {
+            if(toggleBool) {
+                team.innerHTML = "$1500 <span>/yearly</span>";
+                agency.innerHTML = "$4000 <span>/yearly</span>";
+                enterprise.innerHTML = "$10000 <span>/yearly</span>";
+                toggle.innerHTML = "Monthly";
+                toggleBool = false
+            }else{
+                team.innerHTML = "$150 <span>/monthly</span>";
+                agency.innerHTML = "$400 <span>/monthly</span>";
+                enterprise.innerHTML = "$999 <span>/monthly</span>";
+                toggle.innerHTML = "Yearly";
+                toggleBool = true
+            }
+        })
+    </script>
 </body>
 </html>
