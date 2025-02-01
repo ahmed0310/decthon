@@ -1,0 +1,139 @@
+@media (max-width: 1200px) {
+  header {
+    left: -300px;
+  }
+  main {
+    margin-left: 0;
+  }
+  .ham {
+    display: block;
+  }
+  .active {
+    left: 0;
+  }
+}
+
+@media (max-width: 990px) {
+  /* .team-members{
+        flex-direction: column;
+    } */
+  /* .wave1-content{
+        flex-direction: column;
+    } */
+  .team-members {
+    gap: 100px;
+  }
+  .infos {
+    flex-direction: column;
+  }
+  .social-links {
+    justify-content: center;
+    align-items: center;
+  }
+  .social-links button {
+    width: 100%;
+  }
+}
+@media (max-width: 750px) {
+  .hero .hero-container h1{
+    text-align: center;
+  }
+  .hero .hero-container p{
+    text-align: center;
+  }
+  .wave1-content {
+    flex-direction: column;
+  }
+  .wave1 img {
+    margin: auto;
+    width: 60vw;
+    height: 60vw;
+  }
+  .headings {
+    width: 100%;
+    text-align: center;
+    font-size: 3rem;
+  }
+  .headings::after {
+    margin: auto;
+    width: 100px;
+    margin-top: 20px;
+  }
+  .wave1-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .wave1-text p {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    text-align: justify;
+  }
+  /* ---------WAVE 2------- */
+  .wave2 p {
+    text-align: center;
+  }
+  .member img {
+    width: 190px;
+  }
+  /* ----WAVE 3  */
+  .wave3-content {
+    flex-direction: column;
+  }
+  .wave3 .card {
+    width: 80%;
+  }
+  .wave3 .icon {
+    width: 70px;
+    height: 70px;
+  }
+  .wave3 .icon img {
+    width: 40px;
+  }
+}
+@media (max-width: 400px) {
+  .hero h1 {
+    font-size: 26px;
+    text-align: center;
+  }
+  .headings{
+    font-size: 2.5rem;
+  }
+  .hero p {
+    font-size: 16px;
+    text-align: center;
+  }
+  .hero a {
+    font-size: 0.5rem;
+  }
+  .hero a img {
+    width: 20px;
+  }
+  .wave1 img {
+    width: 75vw;
+    height: 75vw;
+  }
+  .wave1 h3{
+    text-align: center;
+    margin-top: 20px;
+  }
+  .wave1-text p{
+    font-size: 1rem;
+    text-align: center;
+  }
+  /* ---------------------- */
+  .member img{
+    width: 160px;
+  }
+  .wave3 .card{
+    width: 100%;
+  }
+  .wave3 .icon{
+    width: 60px;
+    height: 60px;
+  }
+  .wave3 .icon img{
+    width: 30px;
+  }
+}
