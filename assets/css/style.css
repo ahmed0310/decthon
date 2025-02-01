@@ -298,8 +298,9 @@ section {
 .wave2 {
   background: #f5f8fd;
   visibility: hidden;
-  padding: 50px 0 100px 0;
+  padding: 100px 0;
 }
+
 .show1 {
   visibility: visible;
   opacity: 0;
